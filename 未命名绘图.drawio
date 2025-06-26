@@ -1,30 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2025-06-26T12:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="unIQueTaG" version="24.6.2" type="device">
-  <diagram name="Page-1" id="uniquePageId">
+<mxfile host="app.diagrams.net">
+  <diagram id="DIAGRAM_ID_1" name="Page-1">
     <mxGraphModel dx="1434" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="STUDENT_CLASS" value="<b>Student</b><hr size="1">- studentId: String<br>- name: String<br>- gender: String<br>- dateOfBirth: Date<hr size="1">+ getAge(): int<br>+ updateProfile(details: String): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2" value="<b>Student</b><hr/>- studentId: String<br>- name: String<br>- gender: String<br>- dateOfBirth: Date<hr/>+ getAge(): int<br>+ updateProfile(details: String): void" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="160" y="160" width="260" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GRADE_CLASS" value="<b>StudentGrade</b><hr size="1">- courseName: String<br>- score: double<br>- semester: String<hr size="1">+ isPass(): bool<br>+ getGradeLevel(): String" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3" value="<b>StudentGrade</b><hr/>- courseName: String<br>- score: double<br>- semester: String<hr/>+ isPass(): bool<br>+ getGradeLevel(): String" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="520" y="160" width="240" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="RELATIONSHIP" value="包含" style="edgeStyle=entityRelationEdgeStyle;endArrow=none;html=1;startArrow=diamondThin;startFill=1;startSize=14;endFill=0;align=center;verticalAlign=middle;" edge="1" parent="1" source="STUDENT_CLASS" target="GRADE_CLASS">
+        <mxCell id="4" value="包含" style="edgeStyle=entityRelationEdgeStyle;endArrow=none;html=1;startArrow=diamondThin;startFill=1;startSize=14;endFill=0;align=center;verticalAlign=middle;" edge="1" parent="1" source="2" target="3">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="420" y="230" as="sourcePoint" />
             <mxPoint x="520" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LABEL_ONE" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RELATIONSHIP">
-            <mxGeometry x="-0.8" relative="1" as="geometry">
-                <mxPoint as="offset"/>
-            </mxGeometry>
+        <mxCell id="5" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="LABEL_MANY" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RELATIONSHIP">
-            <mxGeometry x="0.8" relative="1" as="geometry">
-                <mxPoint as="offset"/>
-            </mxGeometry>
+        <mxCell id="6" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
